@@ -1,0 +1,21 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+            <div class="row">
+
+
+                                  <div class="card-wrapper">
+  <div class="card">
+    <form action="/form_login" method="post">
+      <strong>Username</strong><br>
+      <input type="text" name="username" value="{{ session.username }}"><br>
+      <strong>Password</strong><br>
+      <input type="password" name="password" value="{{ session.password }}"><br><br>
+      <input type="submit" value="Login">
+    </form>
+  </div>
+ <div class="card-wrapper">
+
+</div>
+{% endblock %}
